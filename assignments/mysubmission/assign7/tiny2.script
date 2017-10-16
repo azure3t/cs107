@@ -1,0 +1,25 @@
+# This is a simple script file that can be executed by
+# test-allocator.  A script is simply a sequence of requests.
+# Each request is a single line, consisting of operation
+# and its arguments (id and size). There are three
+# types of requests:
+#
+#    allocate:    a id size
+#    reallocate:  r id size
+#    free:        f id
+#
+# The "id" arguments are numbers from 0 to N
+# that are used to identify the different pointers
+# being allocated/freed.
+
+a 0 2040
+a 1 4010
+a 2 48
+r 2 128
+a 3 4072
+r 0 1024
+f 0
+f 1
+f 2
+f 3
+

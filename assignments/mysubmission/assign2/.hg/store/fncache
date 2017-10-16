@@ -1,0 +1,9 @@
+data/cvector.h.i
+data/slink.i
+data/libcvecmap.a.i
+data/warmup.c.i
+data/.hgignore.i
+data/.hgtags.i
+data/cmap.h.i
+data/Makefile.i
+data/searchdir.c.i

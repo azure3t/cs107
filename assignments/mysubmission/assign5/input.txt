@@ -1,0 +1,5 @@
+Should array indices start at 0 or 1? My compromise of 0.5 was rejected without, I thought, proper consideration.
+8192 -484
+7 52 6 5
+608#16 1 2
+50 91 

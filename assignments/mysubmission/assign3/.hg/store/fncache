@@ -1,0 +1,11 @@
+data/vectest.c.i
+data/cvector.h.i
+data/slink.i
+data/cvector.c.i
+data/.hgtags.i
+data/maptest.c.i
+data/.hgignore.i
+data/cmap.c.i
+data/cmap.h.i
+data/Makefile.i
+data/thesaurus.c.i

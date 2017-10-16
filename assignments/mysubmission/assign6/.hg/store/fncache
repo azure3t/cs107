@@ -1,0 +1,13 @@
+data/Makefile.i
+data/readme.txt.i
+data/slink.i
+data/cmap.h.i
+data/libcvecmap.a.i
+data/.hgtags.i
+data/database.c.i
+data/.hgignore.i
+data/customdatabase.tsv.i
+data/database.h.i
+data/exploits.c.i
+data/exploits.h.i
+data/runexploits.c.i

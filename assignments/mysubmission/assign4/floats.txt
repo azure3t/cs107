@@ -1,0 +1,59 @@
+File: floats.txt
+Author:Tiantian Tang 
+
+Example from writeup
+----------------------------------------------
+Float bits: 0 01111111 11000000000000000000000
+Epsilon: 2^-23
+Value: 2^0 + 2^-1 + 2^-2
+Decimal: 1.75
+
+
+a) -100
+----------------------------------------------
+Float bits:1 10000101 10010000000000000000000
+Epsilon: 2^6
+Value: 2^0 + 2^-1 + 2^-4
+Decimal:-100.0
+
+
+b) smallest positive normalized float value (FLT_MIN)
+----------------------------------------------
+Float bits:0 00000001 00000000000000000000000
+Epsilon: 2^-126
+Value: 2^0
+Decimal:1.175494350822287507969E-38
+
+
+c) median float value from same binade as FLT_MAX (choose either of the two medians)
+----------------------------------------------
+Float bits: 0 11111110 01111111111111111111111
+Epsilon:2^127
+Value: 2^0 + 2^-2 + 2^-3 + .....2^-23
+Decimal: 2.552117549082942439444E+38
+
+d) largest odd integer that is exactly representable as float
+----------------------------------------------
+Float bits:0 10010110 11111111111111111111111
+Epsilon: 2^23
+Value: 2^0 + 2^-2 + 2^-3 + .....2^-23
+Decimal:16777215.0
+
+Notes:
+largest odd integer that can be represented will have a binary representation of
+23+1 ones. so we want to have somethign like 1.1111..111 * 2^23 = 1111....1111 (total of 24 ones)
+
+
+e) smallest float value that can be added to FLT_MAX to sum to infinity
+----------------------------------------------
+Float bits:0 00000000 00000000000000000000001
+Epsilon:2^-127
+Value: 2^-23
+Decimal: 7.0064923E-46
+
+notes:
+FLAT_MAX float bits: 0 11111110 11111111111111111111111
+Ininity  float bits: 0 11111111 00000000000000000000000
+
+difference btw this two number will the the answer
+

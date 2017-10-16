@@ -1,0 +1,9 @@
+data/bits.c.i
+data/bitstest.c.i
+data/readme.txt.i
+data/slink.i
+data/.hgtags.i
+data/bits.h.i
+data/.hgignore.i
+data/floats.txt.i
+data/Makefile.i

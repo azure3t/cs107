@@ -1,0 +1,44 @@
+# File: custom_tests
+# ------------------
+# This file contains a list of custom tests to be run by the sanity check tool.
+# Each custom test is given on a single line using format:
+#
+#     executable  arg(s)
+#
+# The executable is the name of the program to run (e.g. mygrep or mywhich)
+# The args are optional. If given, they are treated as a sequence of space-separated
+# command-line arguments with which to invoke the executable program.
+#
+# For each custom test, sanity check will invoke your executable program and the
+# solution program (using same command-line arguments), compare the two
+# outputs to verify if they match, and report the outcome.
+#
+# Blank lines and comment lines beginning with # are ignored.
+#
+# Below is an example custom test, edit as desired.
+
+mywhich -p /tmp:/bin ls
+mywhich ls which -p
+mywhich -p
+mywhich ls a b which submit
+mywhich ls /bin:/date date
+
+
+
+mygrep '^.' slink/dictionary
+mygrep '^..' slink/dictionary
+mygrep '^.hat' slink/dictionary
+mygrep '^..at' slink/dictionary
+mygrep '^wh.' slink/dictionary
+mygrep '^wh..' slink/dictionary
+mygrep '^wh.t' slink/dictionary
+
+#mygrep 'a*to' words2
+#mygrep 'a*t*o' words2
+#mygrep 'a.*' words2
+#mygrep '.*o' words2
+#mygrep '^.*t' words2
+#
+#
+mygrep 'ip*op' myword
+mygrep 'ub.*bles*' myword
