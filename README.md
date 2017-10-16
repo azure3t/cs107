@@ -1,1 +1,1 @@
-# cs107: stanford Computer Systems & Organization class code
+# CS107: Stanford Computer Systems & Organization class code
